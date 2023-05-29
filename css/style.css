@@ -1,0 +1,206 @@
+body {
+  overflow-y: hidden;
+}
+/* =================== Loading page ======================= */
+#loading {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgb(214, 46, 51);
+  z-index: 9999;
+}
+.spinner {
+  margin: 100px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.cube1,
+.cube2 {
+  background-color: #333;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+  animation: sk-cubemove 1.8s infinite ease-in-out;
+}
+
+.cube2 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+@-webkit-keyframes sk-cubemove {
+  25% {
+    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+  }
+  50% {
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+  }
+  75% {
+    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg)
+      scale(0.5);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+@keyframes sk-cubemove {
+  25% {
+    transform: translateX(42px) rotate(-90deg) scale(0.5);
+    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+  }
+  50% {
+    transform: translateX(42px) translateY(42px) rotate(-179deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+  }
+  50.1% {
+    transform: translateX(42px) translateY(42px) rotate(-180deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+  }
+  75% {
+    transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg)
+      scale(0.5);
+  }
+  100% {
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+  }
+}
+/* =================== Section1 ======================= */
+#home {
+  overflow: hidden;
+  height: 120vh;
+  width: 100%;
+  background-image: url(../img/events-heavenly-header.jpg);
+  background-size: cover;
+  background-size: 100% 100%;
+  position: relative;
+}
+.layer .content {
+  margin-top: 200px;
+}
+.layer .content .openSide {
+  display: block;
+  position: relative;
+  left: 20px;
+  font-size: 30px;
+  font-weight: 500;
+  cursor: pointer;
+}
+/* ========= Sidenav ========= */
+.sidenav {
+  display: none;
+  top: 0%;
+  left: 0%;
+  width: 0px;
+  position: fixed;
+  height: 100%;
+  background-color: #414658;
+  padding-top: 65px;
+  z-index: 999;
+}
+.sidenav .exit {
+  position: absolute;
+  right: 30px;
+  top: 0px;
+  cursor: pointer;
+}
+.sidenav a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 26px;
+  padding: 20px 8px 20px 32px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.sidenav a:hover {
+  color: rgb(122, 37, 37);
+}
+.sidenav .bgImages img {
+  cursor: pointer;
+}
+/* ========= Duration ========= */
+.details-head {
+  background-color: rgba(214, 46, 51, 0.7);
+  padding: 8px;
+  cursor: pointer;
+}
+.details-content {
+  background-color: rgba(207, 64, 69, 0.5);
+  display: none;
+}
+#sing1 {
+  display: block;
+}
+.duration-box {
+  width: 25%;
+}
+.duration-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 2px solid #fff;
+  width: 90%;
+  margin: auto;
+}
+.duration-box p {
+  padding: 10px;
+  margin: 0;
+  font-size: 30px;
+}
+#duration {
+  background-image: url(../img/Event.jpg);
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.layer {
+  overflow: hidden;
+  background-color: rgba(208, 140, 142, 0.6);
+  width: 100%;
+  height: 100%;
+}
+.col-md-6 p,
+span,
+i {
+  color: #888;
+}
+#contact .col-md-6 .mail,
+#contact #counter {
+  color: rgba(208, 140, 142, 0.6);
+}
+#contact .col-md-5 button {
+  background-color: rgba(208, 140, 142, 0.6);
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  border: solid 1px #888;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.icon:hover {
+  background-color: rgb(240, 183, 185);
+  color: #fff;
+}
+.icon:hover i {
+  color: #fff;
+}
