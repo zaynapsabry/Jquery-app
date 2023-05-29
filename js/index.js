@@ -79,7 +79,7 @@ $("#singer4").click(function () {
 
 // ===============  Duration =================
 
-let countDownDate = new Date("June 6, 2023 00:00:00").getTime();
+let countDownDate = new Date("July 17, 2023 00:00:00").getTime();
 let x = setInterval(function () {
   let now = new Date().getTime();
   let distance = countDownDate - now;
